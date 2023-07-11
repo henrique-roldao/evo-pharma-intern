@@ -1,0 +1,309 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: gray;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.navbar {
+  padding: 2rem 5rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h4{
+  font-size: 1.6rem;
+  margin: 0;
+ 
+  color: #667085;
+}
+
+.navbar .nav-link {
+  color: #667085;
+  margin-left: 4rem;
+}
+
+.user-information {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.user-information img{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.user-information p{
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  width: 100rem;
+  margin: 11.5rem 0 2.4rem;
+  
+  font-size: 6rem;
+  text-align: center;
+  color:#101828;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+}
+
+.open-release > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  
+  border: solid 1px #D0D5DD;
+  padding: 1.6rem 2.8rem;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  
+  margin-bottom: 8.2rem;
+  text-decoration: none;
+}
+
+.open-release > a > p {
+  color:#344054;
+  margin-bottom: 0;
+}
+
+.main-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section button{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
+  gap: 4.8rem 2rem;
+  padding: 0 9rem;
+}
+
+.card {
+  border: none;
+}
+.card a{
+  height: 58rem;
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1.2rem;
+  
+}
+
+.card a > img {
+  width: 95%;
+  height: 28rem;
+  margin-bottom: 6.6rem;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card small {
+  color: #7A5CBB;
+  font-size: 1.4rem;
+}
+
+.card h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #101828;
+}
+.cotent {
+  width: 95%;
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.load-more {
+  padding: 1.2rem 2rem;
+  margin: 6.4rem 0 9.6rem;
+  border-radius: 8px;
+  border: none;
+  
+  background-color: #FAFF00;
+  color: #101828;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* responsividade */
+@media(max-width: 1290px) {
+  .secondary-section{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+}
+
+@media(max-width: 1138px) {
+  :root{
+    font-size: 50%;
+  }
+}
+
+@media(max-width: 1095px) {
+  :root{
+    font-size: 50%;
+  }
+
+ 
+}
+
+@media(max-width: 990px) {
+  .user-information {
+    margin: 2rem 0;
+    align-items: initial;
+    justify-content: flex-start;
+  }
+
+  h4{
+    display:flex;
+    flex-grow: 1;
+  }
+  .main-section img {
+    width: 90%;
+  }
+}
+
+
+
+@media(max-width: 800px) {
+  :root{
+    font-size: 45%;
+  }
+}
+
+@media(max-width: 760px) {
+  :root{
+    font-size: 45%;
+  }
+
+  h1{
+    width: 90%;
+    font-size: 3.5rem;
+  }
+
+  .secondary-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width:575px) {
+  :root{
+    font-size: 40%;
+  }
+
+  .secondary-section{
+    width: 70%;
+  }
+}
+
+@media(max-width:500px) {
+  :root{
+    font-size: 30%;
+  }
+  .navbar {
+    padding: 2rem 1rem;
+  }
+
+  .card a{
+    height: auto;
+  }
+
+  .card a .cotent small{
+    font-size: 2rem;
+  }
+  .card a .cotent h3{
+    font-size: 3.5rem;
+  }
+
+  .card a .cotent p, .load-more{
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width:450px) {
+  .secondary-section{
+    padding: 0 2rem;
+  }
+  
+
+  .main-section img {
+    width: 100%;
+  }
+}
+
+
+@media(max-width:360px) {
+  .card {
+    width: 90%;
+  }
+}
+
+/* animação */
+.open-release, .load-more{
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.open-release:hover, .load-more:hover{
+  transform: translateY(5px);
+}
+
+
